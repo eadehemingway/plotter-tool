@@ -12,20 +12,22 @@
 <body>
     <div class="container">
     <svg></svg>
+<!-- ---------------------CORAL LINE----------------------------- -->
+    <div class="line-container">
+    <div class="coral-line">
+    <h2>Coral line</h2>
     <div class="column">
-
-
     <h3>X Coordinate</h3>
-    <p id="x-func-str-display"></p>
+    <p id="coral-x-str-display"></p>
     <div class="line">
         <label for="x-func">x =</label>
-        <select id="x-input" name="x-func">
+        <select id="coral-x-input" name="x-func">
 
             <option>sin</option>
             <option>cos</option>
         </select>
-        <label for="x-input-multiple">( θ *</label>
-        <input type="text" name="x-input-multiple" id="x-input-multiple"/>)
+        <label for="coral-x-input-multiple">( θ *</label>
+        <input type="text" name="coral-x-input-multiple" id="coral-x-input-multiple"/>)
     </div>
 
     </div>
@@ -33,24 +35,61 @@
 <div class="column">
     <h3>Y Coordinate</h3>
 
-    <p id="y-func-str-display"></p>
+    <p id="coral-y-str-display"></p>
 
     <div class="line">
         <label for="y-func">y =</label>
 
-        <select id="y-input" name="y-func">
+        <select id="coral-y-input" name="y-func">
             <option>cos</option>
             <option>sin</option>
         </select>
-        <label for="y-input-multiple">( θ *</label>
-        <input type="text" name="y-input-multiple" id="y-input-multiple"/>)
+        <label for="coral-y-input-multiple">( θ *</label>
+        <input type="text" name="coral-y-input-multiple" id="coral-y-input-multiple"/>)
+    </div>
+</div>
+</div>
+<!-- -----------------------BLUE LINE--------------------------- -->
+<div class="blue-line">
+    <h2>Blue line</h2>
+    <div class="column">
+    <h3>X Coordinate</h3>
+    <p id="blue-x-str-display"></p>
+    <div class="line">
+        <label for="x-func">x =</label>
+        <select id="blue-x-input" name="x-func">
+
+            <option>sin</option>
+            <option>cos</option>
+        </select>
+        <label for="blue-x-input-multiple">( θ *</label>
+        <input type="text" name="blue-x-input-multiple" id="blue-x-input-multiple"/>)
     </div>
 
+    </div>
+
+<div class="column">
+    <h3>Y Coordinate</h3>
+
+    <p id="blue-y-str-display"></p>
+
+    <div class="line">
+        <label for="y-func">y =</label>
+
+        <select id="blue-y-input" name="y-func">
+            <option>cos</option>
+            <option>sin</option>
+        </select>
+        <label for="blue-y-input-multiple">( θ *</label>
+        <input type="text" name="blue-y-input-multiple" id="blue-y-input-multiple"/>)
+    </div>
+</div>
 </div>
 </div>
 </body>
 
 <script type="text/javascript" src="./setup.js"></script>
-<script type="text/javascript" src="./script.js"></script>
+<script type="text/javascript" src="./coral_ev_list.js"></script>
+<script type="text/javascript" src="./blue_ev_list.js"></script>
 <script type="text/javascript" src="./draw.js"></script>
 </html>

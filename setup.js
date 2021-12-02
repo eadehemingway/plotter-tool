@@ -3,6 +3,7 @@
 const svg_width = 1200;
 const svg_height = 700;
 const svg = d3.select("svg");
+
 svg.attr("width", svg_width)
     .attr("height", svg_height)
     .style("border", "2px solid white");
@@ -23,7 +24,11 @@ svg.append("line")
     .attr("x2", svg_width/2)
     .attr("stroke", "sienna");
 
-const group = svg.append("g")
-    .attr("class", "circles");
+const coral_circle_g = svg.append("g")
+    .attr("class", "coral-circles");
 
-group.attr("transform", `translate(${svg_width/2}, ${svg_height/2})`);
+const blue_circle_g = svg.append("g")
+    .attr("class", "blue-circles");
+
+coral_circle_g.attr("transform", `translate(${svg_width/2}, ${svg_height/2})`);
+blue_circle_g.attr("transform", `translate(${svg_width/2}, ${svg_height/2})`);

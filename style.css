@@ -1,7 +1,7 @@
 *
 {
     margin: 0;
-    padding: 0;
+
 }
 
 html,
@@ -44,13 +44,18 @@ margin-top: 30px;
 
 }
 
-#x-input-multiple, #y-input-multiple {
+#coral-x-input-multiple, #coral-y-input-multiple, #blue-x-input-multiple, #blue-y-input-multiple {
 max-width: 50px;
 height: 20px;
 }
 
 p {
 color: brown;
+}
+
+h2 {
+margin: 20px 10px;
+min-width: 130px;
 }
 
 select {
@@ -60,4 +65,22 @@ select {
 
 input , select{
     background: linen;
+}
+
+.coral-line, .blue-line {
+
+display: flex;
+}
+
+.line-container {
+display: flex;
+flex-direction: column;
+
+}
+
+.blue-line h2 {
+color : lightsteelblue;
+}
+.coral-line h2 {
+color : coral;
 }

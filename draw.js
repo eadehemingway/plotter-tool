@@ -6,7 +6,7 @@ const funcLib = {
 
 function drawCircles(color, circle_group, x_select, y_select, x_mul, y_mul){
     circle_group.selectAll("circle").remove();
-    const size = 200;
+    const size = window.innerWidth > 400 ? 200: 100;
 
     for(let i = 0; i< 60; i++){
         circle_group.append("circle")

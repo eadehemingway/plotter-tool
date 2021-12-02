@@ -1,8 +1,7 @@
 
 
 const svg_width = Math.min(window.innerWidth, 1000);
-
-const svg_height =window.innerHeight - 200;
+const svg_height = window.innerHeight - 200;
 const svg = d3.select("svg");
 
 svg.attr("width", svg_width)

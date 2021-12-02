@@ -7,18 +7,9 @@
 html,
 body
 {
-    overflow: hidden;
     background: linen;
     font-family: Arial;
-    padding: 40px;
-}
 
-.webgl
-{
-    position: fixed;
-    top: 0;
-    left: 0;
-    outline: none;
 }
 
 .column {
@@ -36,6 +27,8 @@ height: fit-content;
 .container {
     display:flex;
     justify-content: space-between;
+
+
 }
 
 .line {
@@ -86,3 +79,12 @@ color : lightsteelblue;
 .coral-line h2 {
 color : coral;
 }
+
+
+
+@media screen and (max-width: 600px) {
+    .container{
+        flex-direction:column;
+    }
+
+  }

@@ -10,6 +10,7 @@ body
     overflow: hidden;
     background: linen;
     font-family: Arial;
+    padding: 40px;
 }
 
 .webgl
@@ -54,7 +55,7 @@ color: brown;
 }
 
 h2 {
-margin: 20px 10px;
+margin: 20px;
 min-width: 130px;
 }
 
@@ -70,6 +71,7 @@ input , select{
 .coral-line, .blue-line {
 
 display: flex;
+flex-direction: column;
 }
 
 .line-container {

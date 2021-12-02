@@ -1,0 +1,41 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body
+{
+    overflow: hidden;
+    background: linen;
+}
+
+.webgl
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+}
+
+.column {
+display: flex;
+flex-direction: column;
+max-width: 300px;
+margin: 20px;
+padding: 20px;
+border: 1px solid grey;
+gap: 20px;
+}
+
+
+.column-container {
+
+    display:flex;
+}
+
+.line {
+display:flex;
+gap: 20px;
+}

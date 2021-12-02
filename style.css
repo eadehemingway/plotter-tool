@@ -9,6 +9,7 @@ body
 {
     overflow: hidden;
     background: linen;
+    font-family: Arial;
 }
 
 .webgl
@@ -22,20 +23,41 @@ body
 .column {
 display: flex;
 flex-direction: column;
-max-width: 300px;
+width: 300px;
 margin: 20px;
 padding: 20px;
 border: 1px solid grey;
-gap: 20px;
+height: fit-content;
+
 }
 
 
-.column-container {
-
+.container {
     display:flex;
+    justify-content: space-between;
 }
 
 .line {
 display:flex;
-gap: 20px;
+gap: 10px;
+margin-top: 30px;
+
+}
+
+#x-input-multiple, #y-input-multiple {
+max-width: 50px;
+height: 20px;
+}
+
+p {
+color: brown;
+}
+
+select {
+    font-size: 20px;
+
+}
+
+input , select{
+    background: linen;
 }

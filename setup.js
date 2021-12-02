@@ -1,0 +1,29 @@
+
+
+const svg_width = 1200;
+const svg_height = 700;
+const svg = d3.select("svg");
+svg.attr("width", svg_width)
+    .attr("height", svg_height)
+    .style("border", "2px solid white");
+
+const padding = 100;
+
+svg.append("line")
+    .attr("x1", 0 + padding)
+    .attr("x2", svg_width - padding)
+    .attr("y1", svg_height / 2)
+    .attr("y2", svg_height/2)
+    .attr("stroke", "sienna");
+
+svg.append("line")
+    .attr("y1", 0 + padding)
+    .attr("y2", svg_height- padding)
+    .attr("x1", svg_width / 2)
+    .attr("x2", svg_width/2)
+    .attr("stroke", "sienna");
+
+const group = svg.append("g")
+    .attr("class", "circles");
+
+group.attr("transform", `translate(${svg_width/2}, ${svg_height/2})`);

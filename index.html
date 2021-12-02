@@ -10,43 +10,47 @@
 <script src="https://d3js.org/d3.v6.min.js"></script>
 </head>
 <body>
+    <div class="container">
     <svg></svg>
-    <div class="column-container">
     <div class="column">
+
+
+    <h3>X Coordinate</h3>
     <p id="x-func-str-display"></p>
     <div class="line">
-        <label for="x-func">x func</label>
+        <label for="x-func">x =</label>
         <select id="x-input" name="x-func">
 
             <option>sin</option>
             <option>cos</option>
         </select>
-
+        <label for="x-input-multiple">( θ *</label>
+        <input type="text" name="x-input-multiple" id="x-input-multiple"/>)
     </div>
-    <div class="line">
-        <label for="x-input-multiple">x-input-multiple</label>
-        <input type="text" name="x-input-multiple" id="x-input-multiple"/>
-</div>
+
     </div>
 
 <div class="column">
+    <h3>Y Coordinate</h3>
+
     <p id="y-func-str-display"></p>
 
     <div class="line">
-        <label for="y-func">y func</label>
+        <label for="y-func">y =</label>
 
         <select id="y-input" name="y-func">
             <option>cos</option>
             <option>sin</option>
         </select>
+        <label for="y-input-multiple">( θ *</label>
+        <input type="text" name="y-input-multiple" id="y-input-multiple"/>)
     </div>
-    <div class="line">
-        <label for="y-input-multiple">y-input-multiple</label>
-        <input type="text" name="y-input-multiple" id="y-input-multiple"/>
-    </div>
+
 </div>
 </div>
 </body>
 
+<script type="text/javascript" src="./setup.js"></script>
 <script type="text/javascript" src="./script.js"></script>
+<script type="text/javascript" src="./draw.js"></script>
 </html>

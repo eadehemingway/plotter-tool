@@ -9,17 +9,18 @@ body
 {
     background: linen;
     font-family: Arial;
+    color: grey;
 
 }
 
 .column {
-display: flex;
-flex-direction: column;
-width: 300px;
-margin: 20px;
-padding: 20px;
-border: 1px solid grey;
-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid white;
+    height: fit-content;
 
 }
 
@@ -27,29 +28,30 @@ height: fit-content;
 .container {
     display:flex;
     justify-content: space-between;
-
+    margin: 100px;
 
 }
 
 .line {
-display:flex;
-gap: 10px;
-margin-top: 30px;
+    display:flex;
+    gap: 10px;
+    margin-top: 30px;
 
 }
 
 #coral-x-input-multiple, #coral-y-input-multiple, #blue-x-input-multiple, #blue-y-input-multiple {
-max-width: 50px;
-height: 20px;
+    max-width: 50px;
+    height: 20px;
 }
 
 p {
-color: brown;
+    color: brown;
+    margin: 10px 0;
 }
 
 h2 {
-margin: 20px;
-min-width: 130px;
+    margin: 20px;
+    min-width: 130px;
 }
 
 select {
@@ -63,21 +65,30 @@ input , select{
 
 .coral-line, .blue-line {
 
-display: flex;
-flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
 }
 
+.coral-line{
+border: 1px solid coral
+
+}
+.blue-line{
+border: 1px solid lightsteelblue
+
+}
 .line-container {
-display: flex;
-flex-direction: column;
+    display: flex;
+    flex-direction: column;
 
 }
 
 .blue-line h2 {
-color : lightsteelblue;
+    color : lightsteelblue;
 }
 .coral-line h2 {
-color : coral;
+    color : coral;
 }
 
 
@@ -85,6 +96,7 @@ color : coral;
 @media screen and (max-width: 600px) {
     .container{
         flex-direction:column;
+        margin: 0px;
     }
 
   }

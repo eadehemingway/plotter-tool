@@ -22,7 +22,7 @@ b_x_input_el.addEventListener("keyup", (e)=> {
 const b_y_select_el = document.querySelector("#blue-y-input");
 const b_y_input_el = document.querySelector("#blue-y-input-multiple");
 const b_y_str_display = document.querySelector("#blue-y-str-display");
-let b_y_multiplier = 1;
+let b_y_multiplier = 56;
 b_y_select_el.value = "cos";
 
 b_y_select_el.addEventListener("change", (e)=> {

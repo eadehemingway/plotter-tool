@@ -82,22 +82,25 @@ input , select{
 .orange-divider-line, .blue-divider-line{
     height: 50%;
     width: 400px;
-    left: -50px;
+    left: -100px;
     position: absolute;
     mix-blend-mode: overlay;
+    pointer-events: none;
 }
 .orange-divider-line{
     background-color: #ff4910;
-    top: -10px;
+    top: -40px;
 
 }
 .blue-divider-line{
     background-color: steelblue;
-    bottom: -10px;
+    bottom: -30px;
 }
 .orange-line{
+    border: 5px solid rgb(200,200,200)
 }
 .blue-line{
+    border: 5px solid rgb(200,200,200)
 
 }
 .line-container {

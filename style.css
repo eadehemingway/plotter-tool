@@ -28,7 +28,6 @@ body
     width: 300px;
     margin: 20px;
     padding: 20px;
-
     height: fit-content;
 
 }
@@ -48,7 +47,7 @@ body
 
 }
 
-#coral-x-input-multiple, #coral-y-input-multiple, #blue-x-input-multiple, #blue-y-input-multiple {
+#orange-x-input-multiple, #orange-y-input-multiple, #blue-x-input-multiple, #blue-y-input-multiple {
     max-width: 50px;
     height: 20px;
 }
@@ -69,34 +68,47 @@ select {
 }
 
 input , select{
-    background: linen;
+    background:white;
 }
 
-.coral-line, .blue-line {
+.orange-line, .blue-line {
 
     display: flex;
     flex-direction: column;
     margin: 10px 0;
 }
 
-.coral-line{
-border: 1px solid #ff4910
 
+.orange-divider-line, .blue-divider-line{
+    height: 50%;
+    width: 5px;
+left: -150px;
+    mix-blend-mode: color-burn;
+    position: absolute;
+}
+.orange-divider-line{
+    background-color: #ff4910;
+    top: -10px;
+}
+.blue-divider-line{
+    background-color: steelblue;
+    bottom: -10px;
+}
+.orange-line{
 }
 .blue-line{
-border: 1px solid steelblue
 
 }
 .line-container {
     display: flex;
     flex-direction: column;
-
+    position:relative;
 }
 
 .blue-line h2 {
     mix-blend-mode: multiply;
 }
-.coral-line h2 {
+.orange-line h2 {
     mix-blend-mode: multiply;
 }
 

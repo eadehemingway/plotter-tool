@@ -12,22 +12,24 @@
 <body>
     <div class="container">
     <svg></svg>
-<!-- ---------------------CORAL LINE----------------------------- -->
+<!-- ---------------------orange LINE----------------------------- -->
     <div class="line-container">
-    <div class="coral-line">
-    <h2>Coral line</h2>
+    <div class="orange-divider-line"></div>
+    <div class="blue-divider-line"></div>
+    <div class="orange-line">
+    <h2>orange line</h2>
     <div class="column">
     <h3>X Coordinate</h3>
-    <p id="coral-x-str-display"></p>
+    <p id="orange-x-str-display"></p>
     <div class="line">
         <label for="x-func">x =</label>
-        <select id="coral-x-input" name="x-func">
+        <select id="orange-x-input" name="x-func">
 
             <option>sin</option>
             <option>cos</option>
         </select>
-        <label for="coral-x-input-multiple">( θ *</label>
-        <input type="text" name="coral-x-input-multiple" id="coral-x-input-multiple"/>)
+        <label for="orange-x-input-multiple">( θ *</label>
+        <input type="text" name="orange-x-input-multiple" id="orange-x-input-multiple"/>)
     </div>
 
     </div>
@@ -35,17 +37,17 @@
 <div class="column">
     <h3>Y Coordinate</h3>
 
-    <p id="coral-y-str-display"></p>
+    <p id="orange-y-str-display"></p>
 
     <div class="line">
         <label for="y-func">y =</label>
 
-        <select id="coral-y-input" name="y-func">
+        <select id="orange-y-input" name="y-func">
             <option>cos</option>
             <option>sin</option>
         </select>
-        <label for="coral-y-input-multiple">( θ *</label>
-        <input type="text" name="coral-y-input-multiple" id="coral-y-input-multiple"/>)
+        <label for="orange-y-input-multiple">( θ *</label>
+        <input type="text" name="orange-y-input-multiple" id="orange-y-input-multiple"/>)
     </div>
 </div>
 </div>
@@ -89,8 +91,11 @@
 </body>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/rough.js/2.1.1/rough.js" ></script>
+<script>
+    CSS.paintWorklet.addModule('./bundled_rough.js');
+  </script>
 <script type="text/javascript" src="./setup.js"></script>
-<script type="text/javascript" src="./coral_ev_list.js"></script>
+<script type="text/javascript" src="./orange_ev_list.js"></script>
 <script type="text/javascript" src="./blue_ev_list.js"></script>
 <script type="text/javascript" src="./draw.js"></script>
 </html>

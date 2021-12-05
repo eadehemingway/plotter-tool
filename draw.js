@@ -9,9 +9,9 @@ function drawCircles(color, circle_group, x_select, y_select, x_mul, y_mul){
     const size = window.innerWidth > 500 ? 300: 100;
 
 
-    for(let i = 0; i< 60; i++){
+    for(let i = 0; i< 200; i++){
         circle_group.append("circle")
-            .attr("r", 3)
+            .attr("r", 4)
             .attr("cx", ()=> {
                 return funcLib[x_select.value](i * x_mul) * size;
 
@@ -23,15 +23,14 @@ function drawCircles(color, circle_group, x_select, y_select, x_mul, y_mul){
             // .attr("fill", "white")
             // .attr("fill", color)
             // .attr("stroke", "white")
-            .attr("fill", "none")
-            .attr("stroke", color)
-            .attr("stroke-width", 2)
+            .attr("fill", color)
+
         ;
 
     }
 }
 
 
-drawCircles("lightsteelblue", blue_circle_g, b_x_select_el, b_y_select_el, b_x_multiplier, b_y_multiplier);
-drawCircles("coral", coral_circle_g, c_x_select_el, c_y_select_el, c_x_multiplier, c_y_multiplier);
+drawCircles("steelblue", blue_circle_g, b_x_select_el, b_y_select_el, b_x_multiplier, b_y_multiplier);
+drawCircles("#ff4910", coral_circle_g, c_x_select_el, c_y_select_el, c_x_multiplier, c_y_multiplier);
 

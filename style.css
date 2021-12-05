@@ -4,12 +4,21 @@
 
 }
 
+@font-face {
+    font-family: "Major Mono";
+    src: local("Major Mono"),
+      url(./MajorMonoDisplay-Regular.ttf) format("truetype");
+  }
+
 html,
 body
 {
-    background: linen;
-    font-family: Arial;
+
+    font-family: Major Mono;
     color: grey;
+    background: white;
+
+    background: url(./white-texture.jpg);
 
 }
 
@@ -19,7 +28,7 @@ body
     width: 300px;
     margin: 20px;
     padding: 20px;
-    border: 1px solid white;
+
     height: fit-content;
 
 }
@@ -71,11 +80,11 @@ input , select{
 }
 
 .coral-line{
-border: 1px solid coral
+border: 1px solid #ff4910
 
 }
 .blue-line{
-border: 1px solid lightsteelblue
+border: 1px solid steelblue
 
 }
 .line-container {
@@ -85,10 +94,10 @@ border: 1px solid lightsteelblue
 }
 
 .blue-line h2 {
-    color : lightsteelblue;
+    mix-blend-mode: multiply;
 }
 .coral-line h2 {
-    color : coral;
+    mix-blend-mode: multiply;
 }
 
 
@@ -100,3 +109,7 @@ border: 1px solid lightsteelblue
     }
 
   }
+
+circle{
+    mix-blend-mode: color-burn;
+}

@@ -5,8 +5,7 @@ const svg_height = window.innerHeight - 200;
 const svg = d3.select("svg");
 
 svg.attr("width", svg_width)
-    .attr("height", svg_height)
-    .style("border", "2px solid white");
+    .attr("height", svg_height);
 
 const padding = 100;
 

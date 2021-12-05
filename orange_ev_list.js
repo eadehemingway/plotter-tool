@@ -7,13 +7,13 @@ let c_x_multiplier = 1;
 
 
 c_x_select_el.addEventListener("change", (e)=> {
-    updateStrDisplay(c_x_str_display, e.target.value, c_x_multiplier);
+    updateStrDisplay("x", c_x_str_display, e.target.value, c_x_multiplier);
     drawCircles(color, orange_circle_g, c_x_select_el, c_y_select_el, c_x_multiplier, c_y_multiplier);
 
 });
 c_x_input_el.addEventListener("keyup", (e)=> {
     c_x_multiplier =  Number(e.target.value) || 1;
-    updateStrDisplay(c_x_str_display, c_x_select_el, c_x_multiplier);
+    updateStrDisplay("x", c_x_str_display, c_x_select_el, c_x_multiplier);
     drawCircles(color, orange_circle_g, c_x_select_el, c_y_select_el, c_x_multiplier, c_y_multiplier);
 
 
@@ -28,24 +28,24 @@ let c_y_multiplier = 1;
 c_y_select_el.value = "cos";
 
 c_y_select_el.addEventListener("change", (e)=> {
-    updateStrDisplay(c_y_str_display, e.target.value, c_y_multiplier);
+    updateStrDisplay("y", c_y_str_display, e.target.value, c_y_multiplier);
     drawCircles(color, orange_circle_g, c_x_select_el, c_y_select_el, c_x_multiplier, c_y_multiplier);
 
 
 });
 c_y_input_el.addEventListener("keyup", (e)=> {
     c_y_multiplier =  Number(e.target.value) || 1;
-    updateStrDisplay(c_y_str_display, c_y_select_el, c_y_multiplier);
+    updateStrDisplay("y", c_y_str_display, c_y_select_el, c_y_multiplier);
     drawCircles(color, orange_circle_g, c_x_select_el, c_y_select_el, c_x_multiplier, c_y_multiplier);
 
 });
 
 
-function updateStrDisplay(display, func, multiplier){
+function updateStrDisplay(axes, display, func, multiplier){
     const m = multiplier === 1 ? "" : `* ${multiplier}`;
-    display.textContent = `y = ${func.value}(θ ${ m})`;
+    display.textContent = `${axes} = ${func.value}(θ ${ m})`;
 }
 
 
-updateStrDisplay(c_y_str_display, c_y_select_el, c_y_multiplier);
-updateStrDisplay(c_x_str_display, c_x_select_el, c_x_multiplier);
+updateStrDisplay("y", c_y_str_display, c_y_select_el, c_y_multiplier);
+updateStrDisplay("x", c_x_str_display, c_x_select_el, c_x_multiplier);

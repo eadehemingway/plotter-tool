@@ -81,14 +81,15 @@ input , select{
 
 .orange-divider-line, .blue-divider-line{
     height: 50%;
-    width: 5px;
-left: -150px;
-    mix-blend-mode: color-burn;
+    width: 400px;
+    left: -50px;
     position: absolute;
+    mix-blend-mode: overlay;
 }
 .orange-divider-line{
     background-color: #ff4910;
     top: -10px;
+
 }
 .blue-divider-line{
     background-color: steelblue;
@@ -123,5 +124,5 @@ left: -150px;
   }
 
 circle{
-    mix-blend-mode: color-burn;
+    /* mix-blend-mode: color-burn; */
 }
